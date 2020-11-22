@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Course</title>
+    <link rel="stylesheet" href="{% static 'courses/css/app.css' %}">
+    {% csrf_token %}
+</head>
+<body>
+<div id="course-creator">
+    [[ message ]]
+</div>
+<script src="https://vuejs.org/js/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#course-creator',
+        delimiters: ['[[', ']]'],
+        data: {
+            message: 'Hello dude'
+        }
+    });
+</script>
+</body>
+</html>
