@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'coeus.apps.CoeusConfig',
     'courses.apps.CoursesConfig',
     'django_sass',
     'django.contrib.admin',

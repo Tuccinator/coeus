@@ -38,5 +38,4 @@ class Question(models.Model):
     quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, null=True)
     question = models.TextField()
     answer_type = models.IntegerField()
-    answers = models.JSONField()
     reasoning = models.TextField()
