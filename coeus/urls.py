@@ -22,5 +22,6 @@ urlpatterns = [
     path('install', views.install),
     path('login', views.login),
     path('admin/', admin.site.urls),
-    path('courses/', include('courses.urls'))
+    path('courses/', include('courses.urls')),
+    path('projects/', include('projects.urls'))
 ]

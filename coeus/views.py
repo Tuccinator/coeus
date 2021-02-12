@@ -8,7 +8,12 @@ from .models import Settings
 
 
 def index(request):
-    return render(request, 'coeus/index.html')
+    website_info = Settings.objects.get(settings_type='name')
+
+    if website_info == None:
+        return HttpResponseRedirect('/install')
+
+    return render(request, 'coeus/index.html', { 'name': website_info.settings_value })
 
 
 def install(request):

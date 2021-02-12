@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'coeus.apps.CoeusConfig',
     'courses.apps.CoursesConfig',
+    'projects.apps.ProjectConfig',
     'django_sass',
     'django.contrib.admin',
     'django.contrib.auth',
